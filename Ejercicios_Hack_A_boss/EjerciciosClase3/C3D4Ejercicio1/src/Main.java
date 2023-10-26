@@ -32,7 +32,7 @@ public class Main {
 
 
         //Apartado D)
-
+        System.out.println("-----Marca Electrodoméstico 4----");
         System.out.println("Marca: " +e4.getMarca());
 
 
