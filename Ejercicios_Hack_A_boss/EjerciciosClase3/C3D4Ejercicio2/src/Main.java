@@ -41,8 +41,10 @@ public class Main {
 
             if (personas[i].getEdad() > 30) {
                 System.out.println("------Datos de la persona " + (i+1) + "------");
-                System.out.println("Nombre: " +personas[i].getNombre());
-                System.out.println("Edad: " +personas[i].getEdad());
+                System.out.println("Nombre: " + personas[i].getNombre());
+                System.out.println("Edad: " + personas[i].getEdad());
+                System.out.println("Dirección: " + personas[i].getDireccion());
+                System.out.println("Teléfono: " + personas[i].getTelefono());
                 System.out.println();
             }
 

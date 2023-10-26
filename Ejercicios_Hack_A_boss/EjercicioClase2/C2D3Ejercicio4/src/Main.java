@@ -73,6 +73,7 @@ public class Main {
                 System.out.print("+---");
             }
 
+            System.out.println();
             System.out.println("¿Quieres seguir eligiendo asientos? (si/no)");
             String continuar = scanner.next();
 
