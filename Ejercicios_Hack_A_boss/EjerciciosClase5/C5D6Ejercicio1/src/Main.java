@@ -10,8 +10,10 @@ public class Main {
         System.out.println(repitel.saludar());
 
         /*******APARTADO D*******/
-        
+
         Animal animal = mamifero;
+
+
 
 
 
