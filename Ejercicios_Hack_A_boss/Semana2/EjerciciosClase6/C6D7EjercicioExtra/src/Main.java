@@ -85,7 +85,7 @@ public class Main {
     }
 
     private static void borrarProducto(List<Producto> productos) {
-        productos.removeIf(producto -> producto.getCodigo() == 6);// Borrar el elemento 5 de la lista siendo este el código 6
+        productos.remove(5);
         System.out.println("------------------------------------------- Lista Actuliazada 1 ----------------------------------------");
         for (Producto productoBorrado : productos) {
             System.out.println(productoBorrado.toString());
