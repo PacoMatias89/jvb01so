@@ -20,13 +20,13 @@ public class Main {
 //        controladoraPersistencia.crearPlatillo(platillo3);
 
         //Eliminar el segundo plato
-//        controladoraPersistencia.borrarPlatillo(platillo2.getId());
+        controladoraPersistencia.borrarPlatillo(platillo2.getId());
 
         //Actualizar platillo 3
         platillo3.setPrecio(10.00);
         platillo3.setNombre("Patatas Fritas con huevos");
         platillo3.setReceta("Patatas y huevos");
-        //controladoraPersistencia.actualizarPlatillo(platillo3);
+        controladoraPersistencia.actualizarPlatillo(platillo3);
 
         // Mostramos los registros por pantalla
         List<Platillo> platillos =  controladoraPersistencia.obtenerPlatillos();
