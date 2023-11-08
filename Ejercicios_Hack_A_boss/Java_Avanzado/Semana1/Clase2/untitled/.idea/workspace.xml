@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a90f15b2-319b-494a-ac31-df2026a63d24" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../../Java-basico/Semana2/EjerciciosClase6/C6D7EjercicioExtra/C6D7EjercicioExtra.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Java-basico/Semana2/EjerciciosClase6/C6D7EjercicioExtra/C6D7EjercicioExtra.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C1D2EjercicioInventario/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C1D2EjercicioInventario/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C1D2EjercicioInventario/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C1D2EjercicioInventario/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C1D2EjercicioInventario/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C1D2EjercicioInventario/C1D2EjercicioInventario.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C1D2EjercicioInventario/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C1D2EjercicioInventario/src/DatosProductosInvalidoException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C1D2EjercicioInventario/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C1D2EjercicioInventario/src/Producto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C1D2EjercicioVectoresYExcepciones/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C1D2EjercicioVectoresYExcepciones/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C1D2EjercicioVectoresYExcepciones/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C1D2EjercicioVectoresYExcepciones/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C1D2EjercicioVectoresYExcepciones/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C1D2EjercicioVectoresYExcepciones/C1D2EjercicioVectoresYExcepciones.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C1D2EjercicioVectoresYExcepciones/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C1D2EjercicioVectoresYExcepciones/src/IndiceInvalidoException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C1D2EjercicioVectoresYExcepciones/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C1D2EjercicioVuelos/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C1D2EjercicioVuelos/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C1D2EjercicioVuelos/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C1D2EjercicioVuelos/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C1D2EjercicioVuelos/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C1D2EjercicioVuelos/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C1D2EjercicioVuelos/C1D2EjercicioVuelos.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C1D2EjercicioVuelos/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C1D2EjercicioVuelos/src/Cliente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C1D2EjercicioVuelos/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C1D2EjercicioVuelos/src/ReservaInvalidaException.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2XtHCTA9SJ1MBmIQ0WOMTE6zXIU" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/franc/OneDrive/Escritorio/Curso-bootcamp_softtek/Java_basico/jvb01so/Ejercicios_Hack_A_boss/Java_Avanzado/Semana1/Clase2/C2D1Ejercicio1",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
+      <setting name="path" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="file://$PROJECT_DIR$" />
+      <setting name="debug" value="false" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a90f15b2-319b-494a-ac31-df2026a63d24" name="Changes" comment="" />
+      <created>1699441329623</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1699441329623</updated>
+      <workItem from="1699441330475" duration="5403000" />
+      <workItem from="1699448417654" duration="711000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
