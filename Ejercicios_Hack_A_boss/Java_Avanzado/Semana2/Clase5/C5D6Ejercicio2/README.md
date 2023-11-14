@@ -36,19 +36,22 @@ En esta parte de mi código lo que he usado como nos pedía en el ejercicio un O
 pide es que busquemos ela fecha más próxima en el tiempo, yo entiendo aquí que la fecha más próxima en el tiempo a la fecha actual,
 así tienes controlado los eventos que tienes próximo y tienes la agenda al día.
 
-Como se puede observar uso el método min en el cual le agrego dos parámetros, uno es el mínimo y la otra con la que será comparada, entonces
-yo uso la fecha del sistema y así como he dicho antes tenemos los eventos controlados y puestos al día.
+Yo lo que hago es eliminar eventos pasado y ver cual de los demás eventos está próximo a la fecha actual y así mostrarlos por consola y tener la 
+agenda controlada del próximo evento
 
 <pre>
 
- // Encuentra el evento más próximo en el tiempo utilizando Optionals.
-        System.out.println("---Encuentra el evento más próximo en el tiempo utilizando Optionals---");
-        Optional<Evento> eventoMasProximo = eventos.stream()
-                .min((evento1, evento2) -> LocalDate.now().compareTo(evento1.getFecha()));//Comparamos la fecha más próxima con la fecha actual.
+  Optional<Evento> eventoMasProximo = eventos.stream()
+                .filter(evento -> LocalDate.now().compareTo(evento.getFecha()) <=0) //eliminamos los eventos pasados
+                .min(Comparator.comparing(evento -> ChronoUnit.YEARS.between(LocalDate.now(), evento.getFecha())));
 
-        eventoMasProximo.ifPresent(evento -> {
-            System.out.println("El evento más próximo es: \n" + evento);
-        });
+// Comparamos la fecha más próxima con la fecha actual.
+        if (eventoMasProximo.isPresent()) {
+            System.out.println("El evento más próximo es: \n" + eventoMasProximo.get());
+        } else {
+            System.out.println("No hay eventos próximos");
+        }
+
 </pre>
 
 ### ENUM

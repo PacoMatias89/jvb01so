@@ -1,4 +1,6 @@
 import java.time.LocalDate;
+import java.time.temporal.ChronoUnit;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
@@ -18,7 +20,7 @@ import java.util.stream.Collectors;
 public class Main {
     public static void main(String[] args) {
         List<Evento> eventos = List.of(
-                new Evento("Reunión de Proyecto A", LocalDate.of(2023, 11, 15), Categoria.REUNION),
+                new Evento("Reunión de Proyecto A", LocalDate.of(2024, 11, 15), Categoria.REUNION),
                 new Evento("Conferencia de Desarrollo Web", LocalDate.of(2023, 12, 5), Categoria.CONFERENCIA),
                 new Evento("Taller de Diseño Gráfico", LocalDate.of(2024, 1, 20), Categoria.TALLER),
                 new Evento("Reunión de Equipo B", LocalDate.of(2023, 11, 25), Categoria.REUNION),
@@ -44,23 +46,37 @@ public class Main {
 
         // Agrupar eventos por categoría y cuenta cuántos eventos hay en cada categoría.
         System.out.println("---Agrupando eventos por categoría y su número de eventos---");
-        int numeroEvento = (int) eventos.stream()
+        int numeroEventoReunion = (int) eventos.stream()
                 .filter(cantidadEvento -> cantidadEvento.getCategoria().equals(Categoria.REUNION))
                 .mapToInt(cantidadEvento -> cantidadEvento.getNombre().length())// Cuento por nombre de los eventos.
                 .count();
 
-        System.out.println("El número de eventos que tienen la categoría " + Categoria.REUNION +  " es: " + numeroEvento);
+        int numeroEventoTaller = (int) eventos.stream()
+                .filter(cantidadEvento -> cantidadEvento.getCategoria().equals(Categoria.TALLER))
+                .mapToInt(cantidadEvento -> cantidadEvento.getNombre().length())// Cuento por nombre de los eventos.
+                .count();
+
+        int numeroEventoConferencia = (int) eventos.stream()
+                .filter(cantidadEvento -> cantidadEvento.getCategoria().equals(Categoria.CONFERENCIA))
+                .mapToInt(cantidadEvento -> cantidadEvento.getNombre().length())// Cuento por nombre de los eventos.
+                .count();
+
+        System.out.println("El número de eventos que tienen la categoría " + Categoria.REUNION +  " es: " + numeroEventoReunion);
+        System.out.println("El número de eventos que tienen la categoría " + Categoria.TALLER +  " es: " + numeroEventoTaller);
+        System.out.println("El número de eventos que tienen la categoría " + Categoria.CONFERENCIA +  " es: " + numeroEventoConferencia);
         System.out.println("---------------------------------------------------");
         System.out.println();
 
-        // Encuentra el evento más próximo en el tiempo utilizando Optionals.
-        System.out.println("---Encuentra el evento más próximo en el tiempo utilizando Optionals---");
         Optional<Evento> eventoMasProximo = eventos.stream()
-                .min((evento1, evento2) -> LocalDate.now().compareTo(evento1.getFecha()));//Comparamos la fecha más próxima con la fecha actual.
+                .filter(evento -> LocalDate.now().compareTo(evento.getFecha()) <=0) //eliminamos los eventos pasados
+                .min(Comparator.comparing(evento -> ChronoUnit.YEARS.between(LocalDate.now(), evento.getFecha())));
 
-        eventoMasProximo.ifPresent(evento -> {
-            System.out.println("El evento más próximo es: \n" + evento);
-        });
+// Comparamos la fecha más próxima con la fecha actual.
+        if (eventoMasProximo.isPresent()) {
+            System.out.println("El evento más próximo es: \n" + eventoMasProximo.get());
+        } else {
+            System.out.println("No hay eventos próximos");
+        }
 
 
         System.out.println("---------------------------------------------------");
