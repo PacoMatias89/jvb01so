@@ -44,11 +44,11 @@ public class Main {
         System.out.println();
 
         // Agrupar empleados por categoria
-        System.out.println("----------Agrupar empleados por categoria------------------");
+        System.out.println("----------Agrupar empleados por categoria Y calcular el promedio por categoría------------------");
         empleados.stream()
                 .filter(empleado -> empleado.getCategoria().equals(Categoria.DESARROLLADOR))
                 .forEach(empleado -> System.out.println(empleado));
-        System.out.println("------------------------------------------------------------");
+
 
         // Calcular el salario promedio para cada categoría.
         double promedioDesarrollador = empleados.stream()
@@ -66,11 +66,12 @@ public class Main {
                 mapToDouble(empleado -> empleado.getSalario())
                 .average().orElse(0.0);
 
-        System.out.printf("El salario promedio para la categoría Desarrollador es: %.2f ", promedioDesarrollador);
+        System.out.printf("El salario promedio para la categoría " + Categoria.DESARROLLADOR+ " es: %.2f ", promedioDesarrollador);
         System.out.println();
-        System.out.printf("El salario promedio para la categoría Desarrollador es: %.2f ", promedioAnalista);
+        System.out.printf("El salario promedio para la categoría "+ Categoria.ANALISTA+ " es: %.2f ", promedioAnalista);
         System.out.println();
-        System.out.printf("El salario promedio para la categoría Desarrollador es: %.2f ", promedioGerente);
+        System.out.printf("El salario promedio para la categoría "+  Categoria.GERENTE +" es: %.2f ", promedioGerente);
+        System.out.println();
         System.out.println();
 
         // Encontrar el empleado con el salario más alto utilizando Optionals.
