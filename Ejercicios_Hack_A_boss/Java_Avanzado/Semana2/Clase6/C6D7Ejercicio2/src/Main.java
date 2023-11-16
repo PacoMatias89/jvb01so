@@ -21,8 +21,8 @@ public class Main {
 
         //Agregamos los gatos
         System.out.println("*************AGREGAMOS GATOS************");
-        registroGatos.agregarMascota(new Gato(1L, "Mittens", 3, "Felino", "Siamés", "Blanco", "Corto"));
-        registroGatos.agregarMascota(new Gato(2L, "Whiskers", 2, "Felino", "Persa", "Gris", "Largo"));
+        registroGatos.agregarMascota(new Gato(1L, "Mittens", 3, "gato", "Siamés", "Blanco", "Corto"));
+        registroGatos.agregarMascota(new Gato(2L, "Whiskers", 2, "gato", "Persa", "Gris", "Largo"));
         System.out.println();
 
         // Agregamos los reptiles
@@ -42,7 +42,7 @@ public class Main {
         System.out.println("*************BUSCAMOS LAS MASCOTAS************");
 
         buscarYMostrarMascotas(registroPerros, "Perro", "");
-        buscarYMostrarMascotas(registroGatos, "Felino", "");
+        buscarYMostrarMascotas(registroGatos, "gato", "");
         buscarYMostrarMascotas(registroAves, "ave", "");
 /************************************************************************************************APARTADO 3*****************************************************************************************************/
 
@@ -57,30 +57,9 @@ public class Main {
         // Mascotas aleatorias
         RegistroMascota<Mascota> registroMascotasAleatorias = new RegistroMascota<>();
 
+//        registroMascotasAleatorias.generarDatosAleatorios(4);
 
-        // Agregar mascotas aleatorias a registroPerros
-        registroMascotasAleatorias.getMascotas().stream()
-                .filter(mascota -> mascota instanceof Perro)
-                .map(mascota -> (Perro) mascota)
-                .forEach(registroPerros::agregarMascota);
 
-        // Agregar mascotas aleatorias a registroGatos
-        registroMascotasAleatorias.getMascotas().stream()
-                .filter(mascota -> mascota instanceof Gato)
-                .map(mascota -> (Gato) mascota)
-                .forEach(registroGatos::agregarMascota);
-
-        // Agregar mascotas aleatorias a registroReptiles
-        registroMascotasAleatorias.getMascotas().stream()
-                .filter(mascota -> mascota instanceof Reptil)
-                .map(mascota -> (Reptil) mascota)
-                .forEach(registroReptiles::agregarMascota);
-
-        // Agregar mascotas aleatorias a registroAves
-        registroMascotasAleatorias.getMascotas().stream()
-                .filter(mascota -> mascota instanceof Ave)
-                .map(mascota -> (Ave) mascota)
-                .forEach(registroAves::agregarMascota);
 
 
 
@@ -90,11 +69,17 @@ public class Main {
         // Mostrar todos los datos generados
         registroMascotasAleatorias.mostrarDatosGenerados();
 
+        // Agregar mascotas aleatorias a las listas existentes
+        agregarMascotasAleatoriasARegistro(registroMascotasAleatorias, registroPerros);
+        agregarMascotasAleatoriasARegistro(registroMascotasAleatorias, registroGatos);
+        agregarMascotasAleatoriasARegistro(registroMascotasAleatorias, registroReptiles);
+        agregarMascotasAleatoriasARegistro(registroMascotasAleatorias, registroAves);
+
 
         // Mostrar mascotas aleatorias
         System.out.println("*************BUSCAMOS LAS MASCOTAS CON LOS DATOS ALEATORIOS************");
         buscarYMostrarMascotas(registroPerros, "Perro", "");
-        buscarYMostrarMascotas(registroGatos, "Felino", "");
+        buscarYMostrarMascotas(registroGatos, "gato", "");
         buscarYMostrarMascotas(registroAves, "ave", "");
 
 
@@ -112,7 +97,6 @@ public class Main {
             }
         }
     }
-
 
     private static <T extends Mascota> void buscarYMostrarMascotas(RegistroMascota<T> registro, String especie, String nombre) {
         List<T> mascotasEncontradas = registro.buscarMascotas(nombre, especie);

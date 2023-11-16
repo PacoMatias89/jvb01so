@@ -134,32 +134,32 @@ En la clase Mascota me creo un método llamado _generarMascotaAleatoria_ , el cu
 En el main los voy agregando uno a uno;
 
 <pre>
-        // Agregar mascotas aleatorias a registroPerros
-        registroMascotasAleatorias.getMascotas().stream()
-                .filter(mascota -> mascota instanceof Perro)
-                .map(mascota -> (Perro) mascota)
-                .forEach(registroPerros::agregarMascota);
+        registroMascotasAleatorias.generarDatosAleatorios(4);
 
-        // Agregar mascotas aleatorias a registroGatos
-        registroMascotasAleatorias.getMascotas().stream()
-                .filter(mascota -> mascota instanceof Gato)
-                .map(mascota -> (Gato) mascota)
-                .forEach(registroGatos::agregarMascota);
+        // Mostrar todos los datos generados
+        registroMascotasAleatorias.mostrarDatosGenerados();
 
-        // Agregar mascotas aleatorias a registroReptiles
-        registroMascotasAleatorias.getMascotas().stream()
-                .filter(mascota -> mascota instanceof Reptil)
-                .map(mascota -> (Reptil) mascota)
-                .forEach(registroReptiles::agregarMascota);
+        // Agregar mascotas aleatorias a las listas existentes
+        agregarMascotasAleatoriasARegistro(registroMascotasAleatorias, registroPerros);
+        agregarMascotasAleatoriasARegistro(registroMascotasAleatorias, registroGatos);
+        agregarMascotasAleatoriasARegistro(registroMascotasAleatorias, registroReptiles);
+        agregarMascotasAleatoriasARegistro(registroMascotasAleatorias, registroAves);
 
-        // Agregar mascotas aleatorias a registroAves
-        registroMascotasAleatorias.getMascotas().stream()
-                .filter(mascota -> mascota instanceof Ave)
-                .map(mascota -> (Ave) mascota)
-                .forEach(registroAves::agregarMascota);
+
+
+    private static <T extends Mascota> void agregarMascotasAleatoriasARegistro(RegistroMascota<Mascota> registroMascotasAleatorias, RegistroMascota<T> registroEspecífico) {
+        List<Mascota> mascotasAleatorias = registroMascotasAleatorias.getMascotas();
+        for (Mascota mascota : mascotasAleatorias) {
+            // Verifica si la mascota ya está en el registro específico antes de agregarla
+            if (!registroEspecífico.getMascotas().contains(mascota)) {
+                registroEspecífico.agregarMascota((T) mascota);
+            }
+        }
+    }
+
 
 </pre>
-
+El método _gregarMascotasAleatoriasARegistro_ lo que va hacer es agregar los elementos aleatorios a la lista ya existe de los animales.
 <pre>
     // Generamos mascotas aleatorias
     public void generarDatosAleatorios(int cantidad) {

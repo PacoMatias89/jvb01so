@@ -17,7 +17,6 @@ public class RegistroMascota<T extends Mascota> {
     //Registro de mascotas
     public void agregarMascota(T mascotas) {
         this.mascotas.add(mascotas);
-        System.out.println("La mascota " + mascotas.getNombre() + " de la especie "+mascotas.getEspecie() +" ha sido agregada en la base de datos....");
     }
 
     //Buscar mascotas por nombre o especie
