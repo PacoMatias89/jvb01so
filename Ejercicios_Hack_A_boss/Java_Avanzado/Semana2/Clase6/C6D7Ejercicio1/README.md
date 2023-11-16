@@ -72,12 +72,11 @@ parámetro en la fecha de fabricación
 <pre>
    // buscamos un auto por su marca o año.
     public T buscarCoche(String marca, LocalDate fechaFabricacion) {
-        for (T coche : this.coche) {
-            if (coche.getMarca().equals(marca) && coche.getFechaFabricacion().equals(fechaFabricacion)) {
-                return  coche;
-            }
-        }
-        return null;
+        Optional<T> cocheEncontrado = coches.stream()
+                .filter(coche -> coche.getMarca().equals(marca) && coche.getFechaFabricacion().equals(fechaFabricacion))
+                .findFirst();
+
+        return cocheEncontrado.orElse(null);
     }
 </pre>
 
