@@ -9,7 +9,7 @@ public class ExplorarDirectorio {
             return;
         }
 
-        imprimirIndentacion(directorio, nivel);
+        imprimirIndentacion( nivel);
 
         // Diferenciar color para directorios y archivos
         if (nivel > 0) {
@@ -21,7 +21,7 @@ public class ExplorarDirectorio {
         System.out.println();
 
         for (String archivo : directorio.getArchivos()) {
-            imprimirIndentacion(directorio, nivel + 1);
+            imprimirIndentacion( nivel + 1);
             System.out.println(ANSI_YELLOW + "|   " + archivo + ANSI_RESET);
         }
 
@@ -29,7 +29,7 @@ public class ExplorarDirectorio {
             explorarDirectorioRecursivo(subdirectorio, nivel + 1);
         }
     }
-    public static void imprimirIndentacion(Directorio directorio, int nivel) {
+    public static void imprimirIndentacion( int nivel) {
         StringBuilder espacios = new StringBuilder();
         for (int i = 0; i < nivel; i++) {
             espacios.append("    ");  // Utilicé cuatro espacios para mayor claridad
