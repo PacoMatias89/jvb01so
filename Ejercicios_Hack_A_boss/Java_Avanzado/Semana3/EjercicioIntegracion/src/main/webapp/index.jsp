@@ -85,6 +85,27 @@
                 <%= request.getAttribute("errorEquipos")%>
             </div>
             <% } %>
+            
+            <!-- Sección de advertencia para equipos con Id negativo -->
+            <% if (request.getAttribute("errorIdEquidos") != null) {%>
+            <div class="alert alert-danger" role="alert">
+                <%= request.getAttribute("errorIdEquidos")%>
+            </div>
+            <% } %>
+            
+            <!-- Sección de advertencia para resultados negativos -->
+            <% if (request.getAttribute("errorResultados") != null) {%>
+            <div class="alert alert-danger" role="alert">
+                <%= request.getAttribute("errorResultados")%>
+            </div>
+            <% } %>
+            
+             <!-- Sección de advertencia para ver si existe el id -->
+            <% if (request.getAttribute("NoExiste") != null) {%>
+            <div class="alert alert-danger" role="alert">
+                <%= request.getAttribute("NoExiste")%>
+            </div>
+            <% } %>
 
             <!-- Formulario para registrar partidos -->
             <form action="PartidoSv" method="post">
