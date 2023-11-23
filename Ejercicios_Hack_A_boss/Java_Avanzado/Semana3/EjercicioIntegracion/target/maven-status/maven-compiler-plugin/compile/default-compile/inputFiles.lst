@@ -1,0 +1,15 @@
+C:\Users\franc\OneDrive\Escritorio\Curso-bootcamp_softtek\Java_Avanzado\Semana3\EjerciciosDePrueba\EjercicioIntegracion\src\main\java\com\pruebajsp\ejerciciointegracion\JakartaRestConfiguration.java
+C:\Users\franc\OneDrive\Escritorio\Curso-bootcamp_softtek\Java_Avanzado\Semana3\EjerciciosDePrueba\EjercicioIntegracion\src\main\java\logica\Partido.java
+C:\Users\franc\OneDrive\Escritorio\Curso-bootcamp_softtek\Java_Avanzado\Semana3\EjerciciosDePrueba\EjercicioIntegracion\src\main\java\logica\Equipo.java
+C:\Users\franc\OneDrive\Escritorio\Curso-bootcamp_softtek\Java_Avanzado\Semana3\EjerciciosDePrueba\EjercicioIntegracion\src\main\java\persistencia\ControladoraPersistenciaPartido.java
+C:\Users\franc\OneDrive\Escritorio\Curso-bootcamp_softtek\Java_Avanzado\Semana3\EjerciciosDePrueba\EjercicioIntegracion\src\main\java\persistencia\exceptions\IllegalOrphanException.java
+C:\Users\franc\OneDrive\Escritorio\Curso-bootcamp_softtek\Java_Avanzado\Semana3\EjerciciosDePrueba\EjercicioIntegracion\src\main\java\logica\ControladoraPartido.java
+C:\Users\franc\OneDrive\Escritorio\Curso-bootcamp_softtek\Java_Avanzado\Semana3\EjerciciosDePrueba\EjercicioIntegracion\src\main\java\persistencia\exceptions\PreexistingEntityException.java
+C:\Users\franc\OneDrive\Escritorio\Curso-bootcamp_softtek\Java_Avanzado\Semana3\EjerciciosDePrueba\EjercicioIntegracion\src\main\java\persistencia\exceptions\NonexistentEntityException.java
+C:\Users\franc\OneDrive\Escritorio\Curso-bootcamp_softtek\Java_Avanzado\Semana3\EjerciciosDePrueba\EjercicioIntegracion\src\main\java\persistencia\PartidoJpaController.java
+C:\Users\franc\OneDrive\Escritorio\Curso-bootcamp_softtek\Java_Avanzado\Semana3\EjerciciosDePrueba\EjercicioIntegracion\src\main\java\com\pruebajsp\ejerciciointegracion\resources\JakartaEE8Resource.java
+C:\Users\franc\OneDrive\Escritorio\Curso-bootcamp_softtek\Java_Avanzado\Semana3\EjerciciosDePrueba\EjercicioIntegracion\src\main\java\servlets\EquipoSv.java
+C:\Users\franc\OneDrive\Escritorio\Curso-bootcamp_softtek\Java_Avanzado\Semana3\EjerciciosDePrueba\EjercicioIntegracion\src\main\java\persistencia\EquipoJpaController.java
+C:\Users\franc\OneDrive\Escritorio\Curso-bootcamp_softtek\Java_Avanzado\Semana3\EjerciciosDePrueba\EjercicioIntegracion\src\main\java\persistencia\ControladoraPersistenciaEquipo.java
+C:\Users\franc\OneDrive\Escritorio\Curso-bootcamp_softtek\Java_Avanzado\Semana3\EjerciciosDePrueba\EjercicioIntegracion\src\main\java\logica\ControladoraEquipo.java
+C:\Users\franc\OneDrive\Escritorio\Curso-bootcamp_softtek\Java_Avanzado\Semana3\EjerciciosDePrueba\EjercicioIntegracion\src\main\java\servlets\PartidoSv.java

@@ -1,0 +1,93 @@
+/* Reset de estilos para mejorar la consistencia entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo del cuerpo de la página */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Estilo del encabezado */
+header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+/* Estilo del contenedor principal */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Estilo de los contenedores de los botones */
+.form-row .btn {
+    white-space: nowrap;
+}
+
+/* Estilo de los botones */
+.btn {
+    display: inline-block;
+    margin: 5px; /* Ajusta el margen según tus preferencias */
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #2ecc71;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #27ae60;
+}
+
+/* Estilo de las tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #3498db;
+    color: #fff;
+}
+
+/* Estilo de las alertas */
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #d9534f;
+    border-radius: 4px;
+    color: #d9534f;
+    background-color: #f2dede;
+}
+
+/* Estilo del pie de página */
+footer {
+    background-color: #3498db;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
