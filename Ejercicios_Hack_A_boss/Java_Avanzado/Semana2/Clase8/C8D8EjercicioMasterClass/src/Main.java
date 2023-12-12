@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 public class Main {
@@ -27,23 +28,35 @@ public class Main {
 
 
         System.out.println("*****Buscando por costo de menor a mayor*****");
-        vehiculos.sort((vehiculo1, vehiculo2) -> {
-            return Double.compare(vehiculo1.getCosto(), vehiculo2.getCosto());
-        });
-       vehiculos.forEach(System.out::println);
-        System.out.println();
+//        vehiculos.sort((vehiculo1, vehiculo2) -> {
+//            return Double.compare(vehiculo1.getCosto(), vehiculo2.getCosto());
+//        });
+//       vehiculos.forEach(System.out::println);
+//        System.out.println();
+
+        vehiculos.sort(Comparator.comparing(Vehiculo::getCosto));
+        vehiculos.forEach(System.out::println);
+//         vehiculos.stream()
+//                .sorted(Comparator.comparing(Vehiculo::getCosto)).forEach(p -> System.out.println(p.getMarca() + " | " + p.getModelo() + " | " + p.getCosto()));
+
+//        listaMarcaPrecio.forEach(p -> System.out.println(p.getMarca() + " | " + p.getModelo() + " | " + p.getCosto()));
 
         //Apartado 4
         /**
          * De la misma forma anterior imprime una lista ordenada por marca y a su vez por precio.
          * */
 
-        System.out.println("*****Buscando por costo de mayor a menor*****");
+        System.out.println("*****Buscando por marca y por su precio*****");
         vehiculos.sort((vehiculo1, vehiculo2) -> {
-            return Double.compare(vehiculo2.getCosto(), vehiculo1.getCosto());
+            if(vehiculo1.getMarca().compareTo(vehiculo2.getMarca()) == 0){
+                return Double.compare(vehiculo1.getCosto(), vehiculo2.getCosto());
+            }
+            return vehiculo1.getMarca().compareTo(vehiculo2.getMarca());
         });
         vehiculos.forEach(System.out::println);
-        System.out.println();
+
+
+
 
         //Apartado 5
         /**
