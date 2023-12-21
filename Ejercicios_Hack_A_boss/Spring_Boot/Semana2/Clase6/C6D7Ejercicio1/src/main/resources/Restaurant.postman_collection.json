@@ -1,0 +1,18 @@
+{
+	"info": {
+		"_postman_id": "b0016f53-eb36-4d7b-8083-9a1ffb87ca14",
+		"name": "Restaurant",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22717834"
+	},
+	"item": [
+		{
+			"name": "nameDishe",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
